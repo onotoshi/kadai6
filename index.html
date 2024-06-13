@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フードシェアリングマップ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.bing.com/api/maps/mapcontrol?key=AiGVdZX6pzH97kRiUvYZxl3Osxtx19Yev8c9o4lGx15ac6PRF0TFE4PPbLJj1lnS&callback=loadMapScenario" async defer></script>
+</head>
+<body>
+    <h1>フードシェアリングマップ</h1>
+    <div id="datetime"></div>
+    <div id="weather"></div>
+    <div id="reportCounts">
+        <div>本日のシェアリング件数: <span id="totalReports">0</span></div>
+    </div>
+    <select id="regionSelect">
+        <option value="hiratsuka">平塚市</option>
+        <option value="oiso">大磯町</option>
+    </select>
+    <div id="myMap"></div>
+    <button onclick="registerShare()">フードシェアリングを登録</button>
+    <script src="app.js" defer></script>
+</body>
+</html>
